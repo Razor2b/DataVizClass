@@ -13,11 +13,21 @@ body {
     margin: 20px auto 20px auto;
     width:1000px;
     height:2000px;
-    padding:20px;
+    padding:10px;
     border:1px solid #000000;
-    background-color: darkorange;    
+    background-color: darkorange;
     border-radius: 10px 10px 10px 10px;
-    box-shadow:  0 0 2px 2px #888;
+}
+
+#logo {
+    z-index: 30;
+    margin: -10px 20px 20px -155px;
+    width:225px;
+    height:225px;
+    border:1px solid #000000;
+    background-image:url(../images/logophoto.jpg);
+    border-radius: 5px;
+    box-shadow:   0 0 2px 2px #888;
 }
 
 #left {
@@ -25,10 +35,10 @@ body {
     float:left;
     margin: 20px 20px 20px 20px;
     width:200px;
-    height:1920px;
+    height:1950px;
     padding:20px;
     border:1px solid #000000;
-    background-color: powderblue;    
+    background-color: powderblue;
     border-radius: 10px 10px 10px 10px;
     box-shadow:  inset 0 0 4px 4px #888;
     background-color:lightblue;
@@ -73,17 +83,46 @@ body {
     font-variant: small-caps;
 }
 
+# right ul{
+    list-style-position: inside;
+    margin-top: 0px;
+}
+
+#right ul li {
+    list-style-type: circle;
+    list-style-position: outside;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    padding-left: 0px;
+    text-indent: 0px;
+}
+
 #right {
     z-index: 20;
     float:left;
     margin: 20px auto 20px auto;
-    width:700px;
-    height:1920px;
-    padding:25px;
+    width:720px;
+    height:1950px;
+    padding-left:50px;
+    padding-right: 15px;
     border:1px solid #000000;
     background-color: aliceblue;    
     border-radius: 10px 10px 10px 10px;
     box-shadow:  inset 0 0 4px 4px #888;  
+}
+
+#rightt {
+     z-index: 20;
+    float:left;
+    margin: 20px auto 20px auto;
+    width:720px;
+    height:1950px;
+    padding-left:50px;
+    padding-right: 15px;
+    border:1px solid #000000;
+    background-color: aliceblue;    
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:  inset 0 0 4px 4px #888; 
 }
 
 #right p{
@@ -92,16 +131,37 @@ body {
     font-size: 20px;
 }
 
-#logo {
-    z-index: 30;
-    margin: -10px 20px 20px -105px;
-    width:225px;
-    height:225px;
-    border:1px solid #000000;
-    background-image:url(../images/logophoto.jpg);
-    border-radius: 5px;
-    box-shadow:   0 0 2px 2px #888;
-    
+#rightt dl dt{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#rightt dl dd {
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+    padding-left: 0px;
+    text-indent: 0px;  
+}
+
+#right dl dt{
+    text-decoration: underline;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-indent: -20px;
+    text-align: left;
+}
+
+#right dl dd {
+    list-style-type: square;
+    list-style-position: outside;
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    padding-left: 0px;
+    text-indent: opx;  
 }
 
 h1 {
@@ -128,9 +188,19 @@ h3 {
     margin:20px 20px 20px 0px;
 }
 
-p2 {
-    text-align: center;
+
+h5{
+    text-decoration: underline;
     font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+pre2 {
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
 
 pre {
@@ -139,22 +209,6 @@ pre {
     font-size: 20px;
 }
 
-
-
-ula{
-    list-style-type: circle;
-    list-style-position: inside;
-    margin: 10px;
-    padding: 10px;
-    text-indent: 20px;
-}
-
-
-
-h4{
-    text-decoration: underline;
-    font-size: 20px;
-}
 
 pl{
     text-align: center;
