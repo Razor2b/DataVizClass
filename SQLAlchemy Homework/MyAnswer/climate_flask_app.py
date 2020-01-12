@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, func
 import dateutil.relativedelta
 from flask import Flask, jsonify
 
-engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Base.classes.keys()

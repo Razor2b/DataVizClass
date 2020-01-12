@@ -1,6 +1,7 @@
 # cd ~/git/DataVizClass
 # git add -A
-# git commit -m"your message here"
-# git push
+# git commit -m "your message here"
+# git push 
+	or git pull
 
 #git status
