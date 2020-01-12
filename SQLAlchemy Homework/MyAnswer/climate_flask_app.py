@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, func
 import dateutil.relativedelta
 from flask import Flask, jsonify
 
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Base.classes.keys()
@@ -33,7 +33,7 @@ def welcome():
         f"/api/v1.0/<start>/<end><br/>"
     )
 
-@app.route("api/v1.0/precipitation")
+@app.route("/api/v1.0/precipitation")
 def precipitation():
     import dateutil.relativedelta
 
@@ -46,7 +46,6 @@ def precipitation():
     MaxDate = dt.datetime.strptime(MaxDate_str,"%Y-%m-%d").date()
 
     sdate = MaxDate - dateutil.relativedelta.relativedelta(months=12)
-
     qry_prcp = session.query(Measurement.date, func.avg(Measurement.prcp).label('avg_prcp')).filter(Measurement.date >= sdate).group_by(Measurement.date)
 
     df_prcp = pd.read_sql_query(qry_prcp.statement, session.bind)
@@ -58,7 +57,7 @@ def precipitation():
     
     return jsonify(List_prcp)
 
-@app.route("api/v1.0/stations")
+@app.route("/api/v1.0/stations")
 def stations():
     results4 = session.query(Measurement.station, func.count(Measurement.station).label('NumST')).group_by(Measurement.station)
 
@@ -69,12 +68,23 @@ def stations():
     return jsonify(sorted_data4)
 
 
-@app.route("api/v1.0/tobs")
+@app.route("/api/v1.0/tobs")
 def tobs():
-    return 0
+    def tobs():
+    qry_temp = 'SELECT tobs FROM Measurement WHERE station = "' + most_active_station +'" AND date >=' + str(sdate) +' AND tobs IS NOT NULL'
+    results5 = session.execute(qry_temp)
 
+    data5 = []
+
+    for row in results5:
+        data5.append(row[0])
+
+    return data5
 
 @app.route("/api/v1.0/<start>")
 def start(start):
-    return 0
-
+    def calc_temps(start_date, end_date):
+    
+    return session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
+        filter(Measurement.date >= start_date).filter(Measurement.date <= end_date).all()
+if __name__ == '__main__':                                                                                                  app.run()  
