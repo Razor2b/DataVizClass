@@ -6,17 +6,9 @@ Data is more powerful when we share it with others! Let's take what we've learne
 
 ![Images/landingResize.png](Images/landingResize.png)
 
-### Before You Begin
+### WHERE MY ANSWER IS!!!
 
-1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
-
-4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
-
-5. Push the above changes to GitHub or GitLab.
+ THIS IS THE URL TO FIND MY ANSWER TO THIS ASSIGNMENT. https://github.com/Razor2b/Web-Design-Challenge.git
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
