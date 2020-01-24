@@ -1,14 +1,20 @@
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
+## WHERE MY ANSWER IS!!!
+
+ THIS IS THE URL TO FIND MY ANSWER TO THIS ASSIGNMENT. https://github.com/Razor2b/Web-Design-Challenge.git
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
 ## Background
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
 ![Images/landingResize.png](Images/landingResize.png)
 
-### WHERE MY ANSWER IS!!!
-
- THIS IS THE URL TO FIND MY ANSWER TO THIS ASSIGNMENT. https://github.com/Razor2b/Web-Design-Challenge.git
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
