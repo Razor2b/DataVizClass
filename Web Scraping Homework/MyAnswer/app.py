@@ -1,9 +1,4 @@
 # import necessary libraries
-from bs4 import BeautifulSoup as bs
-import requests
-import pandas as pd
-from splinter import Browser
-import time
 from flask import Flask, render_template, jsonify, redirect
 from flask_pymongo import PyMongo
 import scrape_mars
@@ -11,8 +6,7 @@ import scrape_mars
 # create instance of Flask app
 app = Flask(__name__)
 
-
-app.config["MONGO_URI"] = "mongodb://localhost:27017/mars_app"
+app.config["MONGO_URI"] = 'mongodb://localhost:27017/mars'
 
 mongo = PyMongo(app)
 
@@ -20,7 +14,7 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     mars = mongo.db.mars.find_one()
-    return render_template("index.html", mars=mars)
+    return render_template("index.html", mars = mars)
 
 
 @app.route("/scrape")

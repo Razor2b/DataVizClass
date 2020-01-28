@@ -3,8 +3,6 @@ import requests
 import pandas as pd
 from splinter import Browser
 import time
-from flask import Flask
-from flask_pymongo import PyMongo
 
 # Create a dictionary for all of the scraped data
 mars_data = {}
@@ -17,11 +15,11 @@ def scrape():
 
     news_title = soup.find('div', class_ = 'content_title').text
 
-    news_p = soup.find('div', class_ = 'rollover_description_inner').text
+    news_sum = soup.find('div', class_ = 'rollover_description_inner').text
 
     # Add the title and summary to the dictionary
     mars_data["news_title"] = news_title
-    mars_data["summary"] = news_p
+    mars_data["news_sum"] = news_sum
 
 
     #JPL Mars Space Image url
