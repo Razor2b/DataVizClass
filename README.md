@@ -4,8 +4,5 @@ When you look first open this website you will see # folders.
 Each one of these folders are labled with the what the topic was for this assignment. 
 I included the intructions and data for the assignent. 
 I have put my answers in a folder that is labled "My Answer".
-<<<<<<< HEAD
-Feel free to click around.
-=======
-Feel free to click around.
->>>>>>> 66bc50f2e3212034f2794c2dc7d1e7ae7f327d4b
+
+##Feel free to click around
