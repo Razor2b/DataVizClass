@@ -128,7 +128,7 @@ function getPlot(id) {
 function getInfo(id) {
     // read the json file to get data
 
-    d3.json("Data/samples.json").then((data)=> {
+    d3.json("data/samples.json").then((data)=> {
         
         // get the data info for table
         var metadata = data.metadata;
@@ -166,7 +166,7 @@ function init() {
     var dropdown = d3.select("#selDataset");
 
     // read the data 
-    d3.json("Data/samples.json").then((data)=> {
+    d3.json("data/samples.json").then((data)=> {
         console.log(data)
 
         // get the id data to the dropdwown menu
