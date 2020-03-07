@@ -2,4 +2,4 @@
 JavaScript UofR assignment
 
 This is the actual URL for this website:
-https://razor2b.github.io/Web-Design-Challenge/
+https://razor2b.github.io/JavaScriptHW/
