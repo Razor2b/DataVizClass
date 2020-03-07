@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+:root {
+  --blue: #DF691A;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #d9534f;
+  --orange: #f0ad4e;
+  --yellow: #f0ad4e;
+  --green: #5cb85c;
+  --teal: #20c997;
+  --cyan: #5bc0de;
+  --white: #fff;
+  --gray: #868e96;!
+  --gray-dark: #343a40;!
+  --primary: #DF691A;
+  --secondary: #4E5D6C;!
+  --success: #5cb85c;
+  --info: #5bc0de;
+  --warning: #f0ad4e;
+  --danger: #d9534f;
+  --light: #abb6c2;
+  --dark: #4E5D6C;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #EBEBEB;
+  text-align: left;
+  background-color: #2B3E50;
+}
+

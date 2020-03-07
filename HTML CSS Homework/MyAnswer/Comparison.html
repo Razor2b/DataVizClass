@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+        <a class="navbar-brand" href="index.html" style="font-family:trebuchet MS; color: white;">Lattitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01" style="font-family: cursive">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" style="color: white;">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false" style="color: white; background-color: orange;">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="MTemp.html" style="color: black;">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html" style="color: black;">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html" style="color: black;">Cloudiness</a>
+                        <a class="dropdown-item" href="WindSpeed.html" style="color: black;">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html" style="color: white;">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html" style="color: white;">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <br>
+    
+    
+<div class="card border-secondary mb-3" style="max-width: 500rem; margin: 50px; background: #868e96; color: white;">
+    <div class="card-group">
+        <div class="card" style="background-color: #2B3E50; ">
+            <div class="card-header" style="font-family:trebuchet MS; font-size: 25px; background:#4E5D6C;"> Comparison:
+            Latitude vs X</div>
+                <div class="card-body text-center float-left" style="width: 500px">
+                    <h5 class="card-title">Vs. Max Temperature</h5>
+                    <img src="images/Fig1.png" class="img-fluid" alt="Responsive image" style="height: 300px">
+                </div>
+                <div class="card-body text-center float-right" style="width: 500px">
+                    <h5 class="card-title">Vs. Humidity</h5>
+                    <img src="images/Fig2.png" class="img-fluid" alt="Responsive image" style="height: 300px">
+                </div>
+                <div class="card-body text-center float-left" style="width: 500px">
+                    <h5 class="card-title">Vs. Cloudiness</h5>
+                    <img src="images/Fig3.png" class="img-fluid" alt="Responsive image" style="height: 300px">
+                </div>
+        
+                <div class="card-body text-center float-right" style="width: 500px">
+                    <h5 class="card-title">Vs. Wind speed</h5>
+                    <img src="images/Fig4.png" class="img-fluid" alt="Responsive image" style="height: 300px">
+                </div>
+        </div>
+        </div>
+</div>
+</body>
+        <footer class="page-footer">
+        <p>&COPY Copright Coding By Rachel Brinkley 2020</p>
+        </footer>
+
+
+</html>
